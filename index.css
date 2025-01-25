@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    border: 2px solid orangered;
+    border-radius: 50%;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 26px 69px;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlist li a:hover{
+    color: grey;
+}
+
+.rightnav{
+    width: 50%;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+.search{
+    font-size: 17px;
+    padding-bottom: 3px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    height: 30px;
+}
+
+.search:focus{
+    outline-style: none;
+}
+
+
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url("city.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+    animation: bgchange 20s linear infinite;
+}
+
+@keyframes bgchange{
+    0%{
+        background: rgba(0, 0, 0, 0.7) url("city.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    20%{
+        background: rgba(0, 0, 0, 0.7) url("city.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    25%{
+        background: rgba(0, 0, 0, 0.7) url("jungle.jpg");
+        background-size: cover;
+        background-blend-mode: darken; 
+    }
+    45%{
+        background: rgba(0, 0, 0, 0.7) url("jungle.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+    } 
+    50%{
+        background: rgba(0, 0, 0, 0.7) url("japan.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+    } 
+    70%{
+        background: rgba(0, 0, 0, 0.7) url("japan.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+        } 
+    75%{
+        background: rgba(0, 0, 0, 0.7) url("lake.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+        }
+    95%{
+        background: rgba(0, 0, 0, 0.7) url("lake.jpg");
+        background-size: cover;
+        background-blend-mode: darken;
+     }         
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    max-width: 50%;
+    padding-top:30px;
+}
+
+.firstsection{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.firsthalf{
+   width: 70%; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.secondhalf{
+    display: block;
+    margin: auto;
+}
+
+.secondhalf img{
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.text-big{
+    font-size: 40px;
+}
+
+.text-small{
+    font-size: 16px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color:  maroon;
+}
+
+.btn:active{
+    border: 2px solid white;
+    background-color: white;
+    color:  maroon;
+}
+
+.btn-sml{
+    padding: 6px 10px;
+    vertical-align: middle;
+    font-size: 17px;
+}
+
+.sec-right{
+    height: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: space-evenly;
+    max-width: 80%;
+    padding-top: 70px;
+}
+
+.imgfluid{
+    width: 200px;
+    height: 200px;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.pad{
+    padding-top: 10px;
+}
+
+.section{
+    height: 500px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: space-evenly;
+    max-width: 80%;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+
+.parasl{
+    padding-top: 90px;
+}
+
+.imgleft{
+    width: 200px;
+    height: 200px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.hi{
+    height: 400px;
+}
+
+
+.ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container{
+    height: 80vh;
+    font-family: 'poppins' , sans-serif;
+    background-color: #1c2841;
+    box-sizing: border-box;
+}
+
+.con{
+    text-align: center;
+    color: #f0ffff;
+    font-size: 2.25rem;
+    padding-top: 50px;
+}
+
+.entryarea{
+    padding-top: 50px;
+    padding-left: 22%;
+    position: absolute;
+    height: 25px;
+    line-height: 80px;
+}
+
+.entryarea input{
+    position: absolute;
+    width: 800px;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 0 30px;
+    line-height: 70px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+    transition: 0.2s ease;
+}
+
+.labeline{
+    color: #f0ffff;
+    padding: 0 31px ;
+    font-size: 1.1rem ;
+    background-color: #1c2841;
+    transition: 0.2s ease;
+}
+
+
+
+.einput:focus,
+.einput:valid{
+    color: #66ff00;
+    border: 2px solid #66ff00;
+}
+
+.einput:focus + .labeline,
+.einput:valid + .labelline{
+    color: #66ff00;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px,-16px) scale(0.88);
+    z-index: 1111;
+}
+
+
+
+
+
+
+
+
